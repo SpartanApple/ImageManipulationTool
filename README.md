@@ -5,6 +5,17 @@ mgale@sfu.ca\
 301349722
 
 ## How to Run
+```
+vagrant up
+vagrant ssh -- -Y
+
+cd project
+./buildAll.sh
+./runAll.sh
+```
+Run *./runAll.sh* to run the program.\
+
+
 *buildAll.sh* is used to build and make all the programs (Only required first time)\
 *runAll.sh* is used to run the program, make sure *buildAll.sh* was run before you attempt to run the program.
 
@@ -12,7 +23,9 @@ After hitting "Open File Explorer" button, it will put you in a directory with s
 Any saved images will be called output.bmp, but note if you wish to save them perminatly you should rename them, or else they will be overwrittenm. 
 
 ## Steps to use
-Run *./runAll.sh* and ti will display 2 windows, one titled "tk" and the other titled "Image Manipulation Tool". The one titled "tk" is the toolbar, it contains buttons which can open the file explorer to select a bitmap image. It can save images and whatever was drawn on them to *output.bmp*. It allows you to change colours with the "select colour" button.
+Run *./runAll.sh* and ti will display 2 windows, one titled "tk" and the other titled "Image Manipulation Tool". The one titled "tk" is the toolbar, it contains buttons which can open the file explorer to select a bitmap image. It can save images and whatever was drawn on them to *output.bmp*. It allows you to change colours with the "select colour" button. The slider is used to change the size of the pen drawing, you need to click "Update Pen Size" button to send the new size to the canvas. Eraser works as expected, it used the current pen size and draws white where the pen is dragged, however it does reset the pen colour to white, so if you wish to draw again afterwards you need to change the colour.\
+
+It may take a few clicks on the canvas to begin drawing because you need to get the window focus.
 
 ## Goal
 <pre>
