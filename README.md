@@ -13,7 +13,7 @@ cd project
 ./buildAll.sh
 ./runAll.sh
 ```
-Run *./runAll.sh* to run the program.\
+Run *./runAll.sh* to run the program.
 
 
 *buildAll.sh* is used to build and make all the programs (Only required first time)\
