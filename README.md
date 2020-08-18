@@ -60,3 +60,7 @@ Files            | Handles file transfer between C and Golang (2-way) - Sends CM
 Executable Calls | Handles telling Golang files when to run and handle files given to it (1-way)
 </pre>
 
+## Sample Images
+![Toolbar](ToolBar.png)
+![Canvas](Canvas.png)
+
