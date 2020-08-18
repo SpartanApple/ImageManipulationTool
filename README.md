@@ -41,6 +41,9 @@ User can load bitmap images by clicking the "Open File Explorer" button in the t
 User can Save the updated bitmap by clicking the "Save File" button in the toolbar, which will save the file in output.bmp
 User can change pen size, pen colour, switch to "erasing" mode
 Canvas automatically re-sizes
+
+I manually read in the bitmap files in the golang program and write it to my own file format, which seperates the header from the data and stores them in seperate files. These files are then read by C and stored in structures within that language. 
+I also manually write bitmap files from the golang program (which is called by C program with filename as the argument).
 </pre>
 
 
@@ -59,6 +62,9 @@ ZeroMQ           | Handles communication between C and Python (2-way) - Sends in
 Files            | Handles file transfer between C and Golang (2-way) - Sends CMP file from Golang to C to be displayed on screen, sends CMP from C to Golang
 Executable Calls | Handles telling Golang files when to run and handle files given to it (1-way)
 </pre>
+
+## Why these Languages
+I chose python to use for the toolbar because of the easy method of creating button in tkinter, as well as the colour wheel tool that is already built into the tkinter library. I chose C for the canvas because I know C is very fast and powerful allowing for quicker updates to the canvas as compared to python. I chose Golang for the file handling because it has goroutines and is also a very fast language. While I only implemented the ability to read and write bmp files, the golang feature of this language could easily be expanded to cover other filetyypes.
 
 ## Sample Images
 ![Toolbar](ToolBar.png)
