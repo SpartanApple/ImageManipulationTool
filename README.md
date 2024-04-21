@@ -1,9 +1,5 @@
 # Image Manipulation Tool
 
-Mitchell Gale\
-mgale@sfu.ca\
-301349722
-
 ## How to Run
 ```
 vagrant up
